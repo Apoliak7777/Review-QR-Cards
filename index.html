@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>NFC tabuľky na Google recenzie pre firmy | ťukni.sk</title>
-  <meta name="description" content="NFC tabuľka na Google recenzie od 29 €: zákazník priloží mobil a hneď hodnotí vašu firmu. Naprogramovaná na váš profil, s QR kódom, doprava zadarmo.">
+  <title>NFC tabuľky na Google recenzie s montážou | ťukni.sk</title>
+  <meta name="description" content="NFC tabuľka na Google recenzie s osobnou montážou za 50 €. Prídeme, nastavíme ju na váš profil na Googli, nalepíme a vyskúšame. Pre firmy na Slovensku.">
   <meta name="theme-color" content="#f4f6fa">
   <meta name="color-scheme" content="light">
   <link rel="canonical" href="https://tukni.sk/">
+  <link rel="alternate" hreflang="sk" href="https://tukni.sk/">
+  <link rel="alternate" hreflang="en" href="https://tukni.sk/en/">
+  <link rel="alternate" hreflang="x-default" href="https://tukni.sk/">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="sk_SK">
+  <meta property="og:locale:alternate" content="en_GB">
   <meta property="og:site_name" content="ťukni.sk">
   <meta property="og:title" content="Viac Google recenzií na jedno priloženie mobilu">
-  <meta property="og:description" content="NFC tabuľka pre slovenské firmy. Naprogramujeme ju na váš Firemný profil na Googli a pošleme hotovú. Od 29 €.">
+  <meta property="og:description" content="NFC tabuľka s logom Google. Prídeme, nastavíme ju na váš Firemný profil na Googli a nalepíme. 50 € vrátane montáže.">
   <meta property="og:url" content="https://tukni.sk/">
   <meta property="og:image" content="https://tukni.sk/assets/img/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -34,12 +38,14 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "OnlineStore",
+        "@type": "LocalBusiness",
         "@id": "https://tukni.sk/#firma",
         "name": "ťukni.sk",
         "url": "https://tukni.sk/",
         "logo": "https://tukni.sk/assets/img/logo-512.png",
+        "image": "https://tukni.sk/assets/img/og-image.png",
         "email": "ahoj@tukni.sk",
+        "priceRange": "50 €",
         "areaServed": { "@type": "Country", "name": "Slovensko" }
       },
       {
@@ -54,17 +60,16 @@
       {
         "@type": "Product",
         "@id": "https://tukni.sk/#produkt",
-        "name": "NFC tabuľka na Google recenzie 120 × 120 mm",
-        "description": "Akrylová tabuľka 120 × 120 mm s NFC čipom NTAG213, naprogramovaná na priamy odkaz na hodnotenie vašej firmy na Google. Funguje s iPhonom aj Androidom bez aplikácie, pre telefóny bez NFC je pribalená nálepka s QR kódom.",
+        "name": "NFC tabuľka na Google recenzie s montážou",
+        "description": "Akrylová tabuľka 120 × 120 mm s NFC čipom NTAG213 a logom Google. Nastavíme ju na priamy odkaz na hodnotenie vašej firmy na Google, osobne nalepíme a vyskúšame. Funguje s iPhonom aj Androidom bez aplikácie.",
         "image": "https://tukni.sk/assets/img/og-image.png",
         "material": "akrylát",
         "offers": {
           "@type": "Offer",
-          "price": "29.00",
+          "price": "50.00",
           "priceCurrency": "EUR",
-          "availability": "https://schema.org/InStock",
           "itemCondition": "https://schema.org/NewCondition",
-          "url": "https://tukni.sk/#cennik",
+          "url": "https://tukni.sk/#cena",
           "areaServed": "SK",
           "seller": { "@id": "https://tukni.sk/#firma" }
         }
@@ -79,11 +84,13 @@
   <!-- Ikony (sprite) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.6l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.45l-5.8 3.05 1.1-6.47L2.6 9.45l6.5-.95z"/></symbol>
+    <symbol id="i-google" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></g></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></g></symbol>
     <symbol id="i-yes" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M8 12.3l2.7 2.7L16.2 9.5"/></g></symbol>
     <symbol id="i-no" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M9 9l6 6M15 9l-6 6"/></g></symbol>
     <symbol id="i-tap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="13.5" y="4" width="8" height="16" rx="2"/><path d="M10 8.6a5 5 0 0 1 0 6.8"/><path d="M6.8 6.2a8.6 8.6 0 0 1 0 11.6"/><path d="M3.6 3.8a12.2 12.2 0 0 1 0 16.4"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.4 4-2 1.4a11.5 11.5 0 0 0 5.9 5.9l1.4-2 4 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2.1-2.2z"/></g></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></symbol>
     <symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></g></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></g></symbol>
@@ -103,18 +110,22 @@
         <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1d4fe0"/><path fill="#ffb300" d="M15.6 9.6l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8z" transform="translate(0 3)"/><path d="M27.2 14.2a8.4 8.4 0 0 1 0 11.6M31.3 10.6a13.6 13.6 0 0 1 0 18.8" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg>
         ťukni
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otvoriť menu">
-        <svg aria-hidden="true"><use href="#i-menu"/></svg>
-      </button>
       <nav class="nav" id="menu" aria-label="Hlavná navigácia">
         <ul class="nav-links">
           <li><a href="#ako-to-funguje">Ako to funguje</a></li>
           <li><a href="#tabulka">Tabuľka</a></li>
-          <li><a href="#cennik">Cenník</a></li>
+          <li><a href="#cena">Cena</a></li>
           <li><a href="#otazky">Otázky</a></li>
         </ul>
-        <a class="btn btn--small" href="#objednavka">Objednať</a>
+        <a class="btn btn--small" href="#kontakt">Kontakt</a>
       </nav>
+      <div class="lang-switch" aria-label="Jazyk">
+        <a href="./" lang="sk" hreflang="sk" aria-current="true">SK</a>
+        <a href="en/" lang="en" hreflang="en">EN</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otvoriť menu">
+        <svg aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
     </div>
   </header>
 
@@ -125,21 +136,21 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <h1 id="hero-title"><span class="eyebrow">NFC tabuľky na Google recenzie</span> Priloží mobil. <span class="mark">Ohodnotí vás na&nbsp;Google.</span></h1>
-          <p class="hero-lead">NFC tabuľka na pulte otvorí zákazníkovi po priložení telefónu priamo okno na hodnotenie vašej firmy. Nemusí nič hľadať ani inštalovať. Tabuľku naprogramujeme na váš Firemný profil na Googli, otestujeme a&nbsp;pošleme hotovú.</p>
+          <p class="hero-lead">NFC tabuľka na pulte otvorí zákazníkovi po priložení telefónu priamo okno na hodnotenie vašej firmy. Nemusí nič hľadať ani inštalovať. Prídeme k&nbsp;vám, tabuľku nastavíme na váš Firemný profil na Googli, nalepíme ju na správne miesto a&nbsp;vyskúšame ju s&nbsp;vami.</p>
           <div class="hero-actions">
-            <a class="btn" href="#objednavka">Objednať tabuľku od 29&nbsp;€ <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn" href="#kontakt">Chcem tabuľku za 50&nbsp;€ <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
             <a class="btn btn--ghost" href="#ako-to-funguje">Ako to funguje</a>
           </div>
           <ul class="checks">
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Naprogramované na váš profil</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Osobná montáž u&nbsp;vás</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Nastavené na váš profil na Googli</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>iPhone aj Android, bez aplikácie</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Doprava po Slovensku zadarmo</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Záruka 12&nbsp;mesiacov</li>
           </ul>
         </div>
 
         <div class="hero-visual">
-          <div class="scene" role="img" aria-label="Ilustrácia: akrylová NFC tabuľka 120 × 120 mm a telefón, ktorý po priložení otvorí hodnotenie firmy s piatimi hviezdičkami">
+          <div class="scene" role="img" aria-label="Ilustrácia: akrylová NFC tabuľka 120 × 120 mm s logom Google a telefón, ktorý po priložení otvorí hodnotenie firmy s piatimi hviezdičkami">
             <div class="scene-rings"></div>
             <div class="plate">
               <div class="dim dim--top"><span>120&nbsp;mm</span></div>
@@ -150,7 +161,7 @@
                   <span lang="en">WE WOULD APPRECIATE<br>YOUR GOOGLE REVIEW!</span>
                 </div>
                 <div class="plate-bottom">
-                  <div class="plate-badge"><svg><use href="#i-star" fill="currentColor"/></svg></div>
+                  <div class="plate-badge"><svg><use href="#i-google"/></svg></div>
                   <div class="plate-tap"><svg><use href="#i-tap"/></svg></div>
                   <span lang="en">Tap to rate your experience</span>
                 </div>
@@ -222,23 +233,24 @@
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow">Ako to funguje</span>
-          <h2 id="ako-title">Vy objednáte. My pripravíme. Zákazníci hodnotia.</h2>
+          <h2 id="ako-title">Ozvete sa. Prídeme. Zákazníci hodnotia.</h2>
+          <p>O&nbsp;nič sa nestaráte. Všetko nastavíme priamo u&nbsp;vás v&nbsp;prevádzke.</p>
         </div>
         <ol class="how">
           <li>
             <span class="how-num">Krok 1</span>
-            <h3>Pošlete nám názov prevádzky</h3>
-            <p>Vo formulári uvediete názov a&nbsp;adresu, prípadne odkaz na váš Firemný profil na Googli. Správny odkaz na hodnotenie nájdeme my.</p>
+            <h3>Ozvete sa nám</h3>
+            <p>Zavolajte alebo vyplňte krátky formulár. Ozveme sa do jedného pracovného dňa a&nbsp;dohodneme termín, ktorý vám vyhovuje.</p>
           </li>
           <li>
             <span class="how-num">Krok 2</span>
-            <h3>Naprogramujeme a&nbsp;otestujeme</h3>
-            <p>Odkaz na hodnotenie vašej firmy vám najprv pošleme na kontrolu. Potom ho zapíšeme do čipu a&nbsp;čip zabezpečíme heslom proti prepísaniu. Každú tabuľku pred odoslaním vyskúšame na iPhone aj na Androide.</p>
+            <h3>Prídeme a&nbsp;všetko nastavíme</h3>
+            <p>Nájdeme správny odkaz na hodnotenie vašej firmy, zapíšeme ho do čipu a&nbsp;čip zabezpečíme heslom. Spolu vyberieme miesto, kde tabuľku zákazníci uvidia, a&nbsp;nalepíme ju.</p>
           </li>
           <li>
             <span class="how-num">Krok 3</span>
-            <h3>Tabuľku nalepíte na pult</h3>
-            <p>Alebo na recepciu či stôl, kde ju zákazník uvidí pri platení. Priloží mobil a&nbsp;o&nbsp;pár sekúnd píše recenziu.</p>
+            <h3>Vyskúšame to s&nbsp;vami</h3>
+            <p>Tabuľku otestujeme na vašom mobile aj na iPhone a&nbsp;Androide. Vám aj personálu ukážeme, ako na ňu zákazníkov upozorniť. Potom už len pribúdajú recenzie.</p>
           </li>
         </ol>
       </div>
@@ -256,7 +268,7 @@
                 <span lang="en">WE WOULD APPRECIATE<br>YOUR GOOGLE REVIEW!</span>
               </div>
               <div class="plate-bottom">
-                <div class="plate-badge"><svg><use href="#i-star" fill="currentColor"/></svg></div>
+                <div class="plate-badge"><svg><use href="#i-google"/></svg></div>
                 <div class="plate-tap"><svg><use href="#i-tap"/></svg></div>
                 <span lang="en">Tap to rate your experience</span>
               </div>
@@ -280,11 +292,11 @@
             <div class="spec-row"><dt>Rozmer</dt><dd>120&nbsp;×&nbsp;120&nbsp;mm</dd></div>
             <div class="spec-row"><dt>Materiál</dt><dd>Akrylát (plexisklo)</dd></div>
             <div class="spec-row"><dt>Čip</dt><dd>NFC NTAG213, 13,56&nbsp;MHz<small>144&nbsp;bajtov pamäte, odkaz na recenziu sa zmestí s&nbsp;rezervou</small></dd></div>
-            <div class="spec-row"><dt>Uchytenie</dt><dd>Lepiaca vrstva 3M na zadnej strane<small>Lepí sa naplocho na pult, sklo alebo dvere. Nie je to stojan.</small></dd></div>
+            <div class="spec-row"><dt>Uchytenie</dt><dd>Lepiaca vrstva 3M na zadnej strane<small>Nalepíme ju naplocho na pult, sklo alebo dvere. Nie je to stojan.</small></dd></div>
             <div class="spec-row"><dt>Telefóny</dt><dd>iPhone XS a&nbsp;novší, Android s&nbsp;NFC<small>Pre ostatné telefóny nálepka s&nbsp;QR kódom na rovnaký odkaz</small></dd></div>
             <div class="spec-row"><dt>Ochrana</dt><dd>Zápis do čipu chránený heslom<small>Cudzí človek odkaz v&nbsp;čipe neprepíše</small></dd></div>
             <div class="spec-row"><dt>Napájanie</dt><dd>Žiadne, čip je pasívny<small>Výrobca čipu (NXP) uvádza uchovanie údajov 10&nbsp;rokov</small></dd></div>
-            <div class="spec-row"><dt>Nápis</dt><dd>„<span lang="en">We would appreciate your Google review!</span>“<small>Anglický text pochopia domáci aj zahraniční hostia</small></dd></div>
+            <div class="spec-row"><dt>Dizajn</dt><dd>Logo Google a&nbsp;nápis „<span lang="en">We would appreciate your Google review!</span>“<small>Anglický text pochopia domáci aj zahraniční hostia</small></dd></div>
           </dl>
         </div>
       </div>
@@ -317,7 +329,7 @@
         <div class="rules-copy">
           <span class="eyebrow">Pravidlá Google pre recenzie</span>
           <h2 id="pravidla-title">Recenzie podľa pravidiel Google. Inak to nemá zmysel.</h2>
-          <p>Google zakazuje odmeňovať za recenzie a&nbsp;vyberať si, koho o&nbsp;hodnotenie požiadate. Takéto recenzie môže odstrániť. Tabuľka ťukni preto posiela každého zákazníka rovno do oficiálneho formulára Google, bez filtrov a&nbsp;medzikrokov.</p>
+          <p>Google zakazuje odmeňovať za recenzie a&nbsp;vyberať si, koho o&nbsp;hodnotenie požiadate. Takéto recenzie môže odstrániť. Tabuľka ťukni preto posiela každého zákazníka rovno do oficiálneho formulára Google, bez filtrov a&nbsp;medzikrokov. Pri montáži vám pravidlá aj vysvetlíme.</p>
           <p><a href="https://support.google.com/contributionpolicy/answer/7400114?hl=sk" target="_blank" rel="noopener">Pravidlá Google pre obsah v&nbsp;Mapách</a></p>
         </div>
         <div class="rules-lists">
@@ -344,64 +356,43 @@
       </div>
     </section>
 
-    <!-- ===== CENNÍK ===== -->
-    <section class="section section--white" id="cennik" aria-labelledby="cennik-title">
+    <!-- ===== CENA ===== -->
+    <section class="section section--white" id="cena" aria-labelledby="cena-title">
       <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Cenník</span>
-          <h2 id="cennik-title">Jasné ceny. Doprava je v&nbsp;cene.</h2>
+          <span class="eyebrow">Cena</span>
+          <h2 id="cena-title">Jedna cena. Montáž je v&nbsp;nej.</h2>
           <p>Platíte raz. Žiadne predplatné ani mesačné poplatky.</p>
         </div>
 
-        <div class="pricing">
-          <article class="plan">
-            <h3 class="plan-name">1&nbsp;tabuľka</h3>
-            <div class="plan-price">
-              <span class="plan-amount">29<span>€</span></span>
-              <span class="plan-unit">29,00&nbsp;€/ks</span>
-            </div>
-            <p>Pre menšiu prevádzku s&nbsp;jedným pultom alebo pokladňou.</p>
-            <a class="btn btn--ghost btn--block" href="#objednavka" data-pkg="1">Vybrať 1&nbsp;tabuľku</a>
-          </article>
-          <article class="plan plan--featured">
-            <span class="plan-badge">Odporúčame</span>
-            <h3 class="plan-name">3&nbsp;tabuľky</h3>
-            <div class="plan-price">
-              <span class="plan-amount">69<span>€</span></span>
-              <span class="plan-unit">23,00&nbsp;€/ks</span>
-            </div>
-            <p>Pult, stoly aj vchod. Zákazník tabuľku uvidí, nech sedí kdekoľvek.</p>
-            <a class="btn btn--block" href="#objednavka" data-pkg="3">Vybrať 3&nbsp;tabuľky</a>
-          </article>
-          <article class="plan">
-            <h3 class="plan-name">5&nbsp;tabuliek</h3>
-            <div class="plan-price">
-              <span class="plan-amount">99<span>€</span></span>
-              <span class="plan-unit">19,80&nbsp;€/ks</span>
-            </div>
-            <p>Pre väčšie reštaurácie, hotely a&nbsp;firmy s&nbsp;viacerými pobočkami.</p>
-            <a class="btn btn--ghost btn--block" href="#objednavka" data-pkg="5">Vybrať 5&nbsp;tabuliek</a>
-          </article>
+        <div class="price-card">
+          <div class="price-main">
+            <span class="plan-name">Tabuľka s&nbsp;montážou</span>
+            <span class="plan-amount">50<span>€</span></span>
+            <span class="plan-unit">za kus, konečná cena</span>
+            <p>Nie sme platiteľmi DPH. Platíte až po montáži, keď tabuľka funguje, prevodom na faktúru.</p>
+            <a class="btn" href="#kontakt">Chcem tabuľku <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <div class="price-includes">
+            <h3>V&nbsp;cene je</h3>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>NFC tabuľka s&nbsp;logom Google</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Nájdenie správneho odkazu na váš profil</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Naprogramovanie a&nbsp;ochrana čipu heslom</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Osobná montáž na vhodné miesto</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Test na vašom mobile, iPhone aj Androide</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Nálepka s&nbsp;QR kódom pre telefóny bez NFC</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Rada pre personál, ako o&nbsp;recenzie žiadať</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Záruka 12&nbsp;mesiacov</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="includes">
-          <h3>V&nbsp;každom balíku</h3>
-          <ul>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Naprogramovanie na váš profil na Googli</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Odkaz vám pred zápisom pošleme na kontrolu</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Test na iPhone aj na Androide</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Ochrana čipu heslom</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Nálepka s&nbsp;QR kódom pre telefóny bez NFC</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Záruka 12&nbsp;mesiacov na čip aj odkaz</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Doprava na výdajné miesto Packeta zadarmo</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Faktúra na firmu</li>
-          </ul>
-        </div>
         <div class="guarantee">
           <h3>Ak tabuľka nefunguje, vyriešime to</h3>
-          <p>Na funkčnosť čipu a&nbsp;správnosť odkazu dávame záruku 12&nbsp;mesiacov. Ak tabuľka pre chybu čipu alebo nesprávne naprogramovaný odkaz neotvorí hodnotenie vašej firmy, bezplatne vám ju vymeníme alebo preprogramujeme, prípadne vám vrátime peniaze.</p>
+          <p>Na funkčnosť čipu a&nbsp;správnosť odkazu dávame záruku 12&nbsp;mesiacov. Ak tabuľka pre chybu čipu alebo nesprávne nastavený odkaz neotvorí hodnotenie vašej firmy, bezplatne ju vymeníme alebo preprogramujeme priamo na mieste.</p>
         </div>
-        <p class="price-note">Ceny sú konečné. Potrebujete viac ako 5&nbsp;kusov alebo tabuľky pre sieť prevádzok? <a href="#objednavka" data-pkg="custom">Napíšte nám</a>. Povieme vám, koľko kusov vieme poslať hneď a&nbsp;kedy dodáme zvyšok.</p>
+        <p class="price-note">Máte viac prevádzok alebo chcete tabuľku na pult aj na stoly? <a href="#kontakt">Napíšte nám</a>, koľko kusov potrebujete, a&nbsp;dohodneme sa.</p>
       </div>
     </section>
 
@@ -424,18 +415,19 @@
           </details>
           <details class="faq-item">
             <summary>Čo ak telefón zákazníka NFC nemá?</summary>
-            <div class="faq-body"><p>Naskenuje QR kód fotoaparátom. Ku každej tabuľke dostanete nálepku s&nbsp;QR kódom, ktorú nalepíte vedľa tabuľky, na menu alebo na dvere. Vedie na rovnaký odkaz ako čip.</p></div>
+            <div class="faq-body"><p>Naskenuje QR kód fotoaparátom. Pri montáži vám nalepíme aj nálepku s&nbsp;QR kódom, napríklad vedľa tabuľky alebo na menu. Vedie na rovnaký odkaz ako čip.</p></div>
           </details>
           <details class="faq-item">
-            <summary>Je to stojan alebo nálepka? Kam tabuľku nalepiť?</summary>
-            <div class="faq-body">
-              <p>Je to plochá akrylová tabuľka 120&nbsp;×&nbsp;120&nbsp;mm s&nbsp;lepiacou vrstvou 3M na zadnej strane. Na rozdiel od stojana ju nalepíte na pult, sklo alebo dvere, takže sa neprevráti ani nestratí. Oproti malej NFC nálepke je väčšia a&nbsp;zákazník si ju ľahšie všimne. Pre telefóny bez NFC k&nbsp;nej pribalíme nálepku s&nbsp;QR kódom na recenzie.</p>
-              <p>Pred nalepením ju na vybrané miesto len priložte a&nbsp;vyskúšajte mobilom, lepiaca vrstva sa dá použiť iba raz. Vyberte miesto, kde ju zákazník vidí pri platení, ale nie tesne vedľa platobného terminálu, aby si ich nemýlil. Priamo na kovový povrch ju nelepte, čip by na ňom nemusel fungovať.</p>
-            </div>
+            <summary>Kam tabuľku nalepíte?</summary>
+            <div class="faq-body"><p>Miesto vyberieme spolu pri montáži. Najlepšie tam, kde ju zákazník vidí pri platení, ale nie tesne vedľa platobného terminálu, aby si ich nemýlil. Tabuľka sa lepí naplocho na pult, sklo alebo dvere, nie je to stojan. Priamo na kov ju nelepíme, čip by na ňom nemusel fungovať.</p></div>
           </details>
           <details class="faq-item">
-            <summary>Ako sa telefón k&nbsp;tabuľke prikladá?</summary>
-            <div class="faq-body"><p>Telefón iPhone sa prikladá hornou časťou, väčšina telefónov s&nbsp;Androidom stredom zadnej strany. Stačí ho na sekundu podržať tesne pri tabuľke.</p></div>
+            <summary>Kam za vami chodíte a&nbsp;kedy môžete prísť?</summary>
+            <div class="faq-body"><p>Napíšte, kde máte prevádzku. Ozveme sa do jedného pracovného dňa a&nbsp;dohodneme termín aj to, ako sa k&nbsp;vám dostaneme. Samotná montáž zvyčajne netrvá dlhšie ako pol hodiny.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Ako sa platí?</summary>
+            <div class="faq-body"><p>Až po montáži, keď tabuľka funguje. Pošleme vám faktúru a&nbsp;zaplatíte prevodom. Nie sme platiteľmi DPH, takže 50&nbsp;€ je konečná cena za tabuľku aj s&nbsp;montážou.</p></div>
           </details>
           <details class="faq-item">
             <summary>Môže mi niekto čip prepísať?</summary>
@@ -443,11 +435,11 @@
           </details>
           <details class="faq-item">
             <summary>Čo ak sa zmení názov alebo adresa firmy?</summary>
-            <div class="faq-body"><p>Odkaz vedie na váš Firemný profil na Googli, nie na názov firmy. Keď v&nbsp;tom istom profile zmeníte názov alebo otváracie hodiny, tabuľka funguje ďalej. Ak sa presťahujete alebo prejdete na nový profil, odkaz treba zmeniť. Tabuľku vám bezplatne preprogramujeme.</p></div>
+            <div class="faq-body"><p>Odkaz vedie na váš Firemný profil na Googli, nie na názov firmy. Keď v&nbsp;tom istom profile zmeníte názov alebo otváracie hodiny, tabuľka funguje ďalej. Ak sa presťahujete alebo prejdete na nový profil, odkaz treba zmeniť. Tabuľku netreba odlepovať, preprogramujeme ju priamo na mieste.</p></div>
           </details>
           <details class="faq-item">
             <summary>Čo ak tabuľka nebude fungovať?</summary>
-            <div class="faq-body"><p>Na funkčnosť čipu a&nbsp;správnosť odkazu máte záruku 12&nbsp;mesiacov od prevzatia. Stačí nám poslať e-mail s&nbsp;popisom a&nbsp;fotkou. Ak ide o&nbsp;chybu čipu alebo nesprávne naprogramovaný odkaz, tabuľku vám bezplatne vymeníme alebo preprogramujeme, prípadne vám vrátime peniaze.</p></div>
+            <div class="faq-body"><p>Na funkčnosť čipu a&nbsp;správnosť odkazu máte záruku 12&nbsp;mesiacov od montáže. Stačí zavolať alebo napísať. Ak ide o&nbsp;chybu čipu alebo nesprávne nastavený odkaz, tabuľku bezplatne vymeníme alebo preprogramujeme.</p></div>
           </details>
           <details class="faq-item">
             <summary>Je to v&nbsp;súlade s&nbsp;pravidlami Google?</summary>
@@ -455,7 +447,7 @@
           </details>
           <details class="faq-item">
             <summary>Čo ak mi niekto napíše negatívnu recenziu?</summary>
-            <div class="faq-body"><p>Môže sa to stať. Tabuľka posiela všetkých zákazníkov rovnako, lebo pravidlá Google zakazujú žiadať o&nbsp;recenziu iba spokojných. Na každú recenziu však môžete v&nbsp;overenom Firemnom profile na Googli verejne a&nbsp;vecne odpovedať. Odpoveď sa zobrazí priamo pod recenziou a&nbsp;uvidia ju aj ďalší zákazníci. Recenziu, ktorá porušuje pravidlá Google (napríklad je falošná alebo urážlivá), môžete Googlu nahlásiť. A&nbsp;keď hodnotí pravidelne viac bežných zákazníkov, jedna kritická recenzia v&nbsp;celkovom priemere zanikne ľahšie, než keď ich máte len pár.</p></div>
+            <div class="faq-body"><p>Môže sa to stať. Tabuľka posiela všetkých zákazníkov rovnako, lebo pravidlá Google zakazujú žiadať o&nbsp;recenziu iba spokojných. Na každú recenziu však môžete vo Firemnom profile na Googli verejne a&nbsp;vecne odpovedať. Odpoveď sa zobrazí priamo pod recenziou a&nbsp;uvidia ju aj ďalší zákazníci. Recenziu, ktorá porušuje pravidlá Google (napríklad je falošná alebo urážlivá), môžete Googlu nahlásiť. A&nbsp;keď hodnotí pravidelne viac bežných zákazníkov, jedna kritická recenzia v&nbsp;celkovom priemere zanikne ľahšie, než keď ich máte len pár.</p></div>
           </details>
           <details class="faq-item">
             <summary>Koľko recenzií vďaka tabuľke získam?</summary>
@@ -466,35 +458,27 @@
             <div class="faq-body"><p>Akrylát utriete vlhkou handričkou. Čip nemá batériu, nič sa na ňom neopotrebúva a&nbsp;výrobca čipu uvádza uchovanie údajov 10&nbsp;rokov.</p></div>
           </details>
           <details class="faq-item">
-            <summary>Predávate aj súkromným osobám?</summary>
-            <div class="faq-body"><p>Nie. Predávame len podnikateľom (firmám a&nbsp;živnostníkom) na ich podnikanie a&nbsp;obciam či verejným inštitúciám. Pri objednávke uvediete IČO, pred vystavením faktúry ho overíme vo verejnom registri a&nbsp;objednávku bez platného IČO odmietneme.</p></div>
-          </details>
-          <details class="faq-item">
             <summary>Dá sa objednať tabuľka s&nbsp;vlastným logom alebo slovenským textom?</summary>
             <div class="faq-body"><p>Pri väčšom počte kusov áno. Napíšte nám, koľko kusov potrebujete, a&nbsp;pošleme vám návrh aj cenu.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary>Ako dlho trvá dodanie?</summary>
-            <div class="faq-body"><p>Po úhrade faktúry tabuľky naprogramujeme a&nbsp;odošleme do 3&nbsp;pracovných dní. Packeta ich zvyčajne doručí na výdajné miesto do 1&nbsp;až 2&nbsp;dní.</p></div>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- ===== OBJEDNÁVKA ===== -->
-    <section class="section section--white" id="objednavka" aria-labelledby="objednavka-title">
+    <!-- ===== KONTAKT ===== -->
+    <section class="section section--white" id="kontakt" aria-labelledby="kontakt-title">
       <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Objednávka</span>
-          <h2 id="objednavka-title">Objednajte si tabuľku</h2>
-          <p>Vyplnenie trvá asi minútu. Do jedného pracovného dňa vám pošleme potvrdenie a&nbsp;faktúru.</p>
+          <span class="eyebrow">Kontakt</span>
+          <h2 id="kontakt-title">Dohodnime sa na montáži</h2>
+          <p>Zavolajte alebo nám nechajte kontakt. Ozveme sa do jedného pracovného dňa a&nbsp;dohodneme termín, ktorý vám vyhovuje.</p>
         </div>
 
         <div class="order">
           <div>
             <!--
               NASTAVENIE ODOSIELANIA:
-              data-web3forms-key  = prístupový kľúč z web3forms.com (objednávky prídu e-mailom)
+              data-web3forms-key  = prístupový kľúč z web3forms.com (správy prídu e-mailom)
               data-email          = adresa, na ktorú sa otvorí e-mail, ak kľúč nie je vyplnený
               action="mailto:…"   = tá istá adresa; použije sa iba v prehliadači bez JavaScriptu
             -->
@@ -502,127 +486,82 @@
                   data-web3forms-key=""
                   data-email="ahoj@tukni.sk">
 
-              <p class="form-note">Všetky polia sú povinné okrem poľa označeného „nepovinné“.</p>
-
-              <fieldset class="fieldset">
-                <legend>1 · Balík</legend>
-                <div class="pkg-options">
-                  <label class="pkg"><input type="radio" name="balik" id="pkg-1" value="1"><span class="pkg-title">1&nbsp;tabuľka</span><span class="pkg-price">29&nbsp;€</span></label>
-                  <label class="pkg"><input type="radio" name="balik" id="pkg-3" value="3" checked><span class="pkg-title">3&nbsp;tabuľky</span><span class="pkg-price">69&nbsp;€</span></label>
-                  <label class="pkg"><input type="radio" name="balik" id="pkg-5" value="5"><span class="pkg-title">5&nbsp;tabuliek</span><span class="pkg-price">99&nbsp;€</span></label>
-                  <label class="pkg"><input type="radio" name="balik" id="pkg-custom" value="custom"><span class="pkg-title">Viac kusov</span><span class="pkg-price">ponuka</span></label>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="meno">Meno a&nbsp;priezvisko</label>
+                  <input type="text" id="meno" name="meno" autocomplete="name" required>
+                  <span class="error">Vyplňte meno.</span>
                 </div>
-                <div class="field qty-row" id="qty-row">
-                  <label for="pocet">Koľko kusov potrebujete?</label>
-                  <input type="number" id="pocet" name="pocet" min="6" max="10000" step="1" inputmode="numeric" placeholder="napr. 12">
-                  <span class="error">Zadajte celé číslo od 6 do 10&nbsp;000.</span>
+                <div class="field">
+                  <label for="telefon">Telefón</label>
+                  <input type="tel" id="telefon" name="telefon" autocomplete="tel" required placeholder="+421">
+                  <span class="error">Vyplňte telefón, zavoláme vám naň.</span>
                 </div>
-              </fieldset>
-
-              <fieldset class="fieldset">
-                <legend>2 · Vaša prevádzka</legend>
-                <div class="field-grid">
-                  <div class="field">
-                    <label for="firma">Obchodné meno (na faktúru)</label>
-                    <input type="text" id="firma" name="firma" autocomplete="organization" required>
-                    <span class="hint">Napr. „Ján Novák“ alebo „Novák s.&nbsp;r.&nbsp;o.“. Sídlo a&nbsp;IČ DPH doplníme podľa IČO.</span>
-                    <span class="error">Vyplňte obchodné meno.</span>
-                  </div>
-                  <div class="field">
-                    <label for="ico">IČO</label>
-                    <input type="text" id="ico" name="ico" inputmode="numeric" autocomplete="off" required pattern="\s*(\d[\s\-]*){6}((\d[\s\-]*){2})?">
-                    <span class="error">IČO má 8 číslic (staršie 6), napr. 12&nbsp;345&nbsp;678.</span>
-                  </div>
-                  <div class="field field--full">
-                    <label for="profil">Firemný profil na Googli</label>
-                    <textarea id="profil" name="profil" rows="2" required placeholder="Odkaz na profil alebo názov a adresa prevádzky"></textarea>
-                    <span class="hint">Napríklad „Kaviareň Pod Hradom, Hlavná 12, Trenčín“. Máte viac prevádzok? Napíšte každú na nový riadok aj s&nbsp;počtom kusov. Správny odkaz nájdeme my a&nbsp;pred zápisom vám ho pošleme na kontrolu.</span>
-                    <span class="error">Napíšte, akú prevádzku máme na Google nájsť.</span>
-                  </div>
+                <div class="field">
+                  <label for="prevadzka">Názov prevádzky</label>
+                  <input type="text" id="prevadzka" name="prevadzka" autocomplete="organization" required placeholder="napr. Kaviareň Pod Hradom">
+                  <span class="error">Napíšte názov prevádzky.</span>
                 </div>
-              </fieldset>
-
-              <fieldset class="fieldset">
-                <legend>3 · Kontakt a&nbsp;doručenie</legend>
-                <div class="field-grid">
-                  <div class="field">
-                    <label for="meno">Meno a&nbsp;priezvisko</label>
-                    <input type="text" id="meno" name="meno" autocomplete="name" required>
-                    <span class="error">Vyplňte meno.</span>
-                  </div>
-                  <div class="field">
-                    <label for="telefon">Telefón</label>
-                    <input type="tel" id="telefon" name="telefon" autocomplete="tel" required placeholder="+421">
-                    <span class="error">Vyplňte telefón, Packeta naň pošle SMS.</span>
-                  </div>
-                  <div class="field field--full">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" autocomplete="email" required>
-                    <span class="error">Zadajte platný e-mail, pošleme naň faktúru.</span>
-                  </div>
-                  <div class="field field--full">
-                    <label for="dorucenie">Výdajné miesto Packeta alebo adresa</label>
-                    <input type="text" id="dorucenie" name="dorucenie" required placeholder="napr. Z-BOX Hlavná 12, Trenčín">
-                    <span class="error">Napíšte, kam máme tabuľky poslať.</span>
-                  </div>
-                  <div class="field field--full">
-                    <label for="poznamka">Poznámka <span class="opt">(nepovinné)</span></label>
-                    <textarea id="poznamka" name="poznamka" rows="3" maxlength="500"></textarea>
-                  </div>
+                <div class="field">
+                  <label for="mesto">Mesto alebo adresa</label>
+                  <input type="text" id="mesto" name="mesto" autocomplete="address-level2" required placeholder="napr. Hlavná 12, Trenčín">
+                  <span class="error">Napíšte, kde máte prevádzku.</span>
                 </div>
-              </fieldset>
+                <div class="field">
+                  <label for="email">E-mail <span class="opt">(nepovinné)</span></label>
+                  <input type="email" id="email" name="email" autocomplete="email">
+                  <span class="error">Skontrolujte e-mail, napríklad meno@firma.sk.</span>
+                </div>
+                <div class="field">
+                  <label for="pocet">Počet tabuliek</label>
+                  <input type="number" id="pocet" name="pocet" min="1" max="50" step="1" value="1" inputmode="numeric" required>
+                  <span class="error">Zadajte celé číslo od 1 do 50.</span>
+                </div>
+                <div class="field field--full">
+                  <label for="poznamka">Poznámka <span class="opt">(nepovinné)</span></label>
+                  <textarea id="poznamka" name="poznamka" rows="3" maxlength="500" placeholder="Napríklad kedy sa vám hodí montáž alebo kedy vám môžeme zavolať."></textarea>
+                </div>
+              </div>
 
               <div class="honeypot" aria-hidden="true">
                 <label for="botcheck">Nevypĺňajte</label>
                 <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
               </div>
 
-              <label class="consent field" for="suhlas">
-                <input type="checkbox" id="suhlas" name="suhlas" required>
-                <span>Objednávam v&nbsp;rámci svojej podnikateľskej činnosti (firma, živnostník) alebo za obec či inú verejnú inštitúciu a&nbsp;súhlasím s&nbsp;<a href="obchodne-podmienky.html" target="_blank">obchodnými podmienkami</a>. Ako spracúvame údaje, nájdete v&nbsp;<a href="ochrana-osobnych-udajov.html" target="_blank">zásadách ochrany osobných údajov</a>.</span>
-                <span class="error">Bez súhlasu s&nbsp;obchodnými podmienkami objednávku neodošleme.</span>
-              </label>
-
-              <noscript><p class="form-note">Bez JavaScriptu sa objednávka odošle cez váš e-mailový program. Ak sa neotvorí, napíšte nám na ahoj@tukni.sk.</p></noscript>
+              <noscript><p class="form-note">Bez JavaScriptu sa správa odošle cez váš e-mailový program. Ak sa neotvorí, napíšte nám na ahoj@tukni.sk.</p></noscript>
 
               <div class="form-actions">
-                <p class="form-total">Spolu <strong id="sum-total-inline">69&nbsp;€</strong><span>doprava zadarmo · platba po faktúre</span></p>
-                <button class="btn btn--block" type="submit" id="submit-btn">Odoslať objednávku <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+                <button class="btn btn--block" type="submit" id="submit-btn">Chcem, aby ste sa mi ozvali <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
                 <p class="form-status" id="form-status" role="alert"></p>
-                <p class="form-note">Odoslaním zatiaľ nič neplatíte. Najprv vám <span class="nowrap">e-mailom</span> pošleme potvrdenie a&nbsp;faktúru so splatnosťou 7&nbsp;dní.</p>
+                <p class="form-note">Odoslaním sa k&nbsp;ničomu nezaväzujete. Údaje použijeme len na to, aby sme sa vám ozvali. Viac v&nbsp;<a href="ochrana-osobnych-udajov.html">zásadách ochrany osobných údajov</a>.</p>
               </div>
             </form>
 
             <div class="form-success" id="form-success" hidden tabindex="-1">
               <div class="form-success-icon"><svg aria-hidden="true"><use href="#i-check"/></svg></div>
-              <h3 id="success-title">Ďakujeme, objednávka je u&nbsp;nás.</h3>
-              <p id="success-text">Potvrdenie a&nbsp;faktúru vám pošleme do jedného pracovného dňa.</p>
+              <h3 id="success-title">Ďakujeme, ozveme sa vám.</h3>
+              <p id="success-text">Zavoláme vám do jedného pracovného dňa a&nbsp;dohodneme termín montáže.</p>
               <div class="copy-line" id="success-fallback" hidden>
                 <span>Adresa: <strong id="fallback-email">ahoj@tukni.sk</strong></span>
                 <a class="btn btn--ghost btn--small" id="fallback-link" href="mailto:ahoj@tukni.sk">Otvoriť e-mail znova</a>
-                <label class="visually-hidden" for="order-text">Text objednávky</label>
+                <label class="visually-hidden" for="order-text">Text správy</label>
                 <textarea id="order-text" rows="8" readonly></textarea>
-                <button class="btn btn--ghost btn--small" type="button" id="copy-order">Kopírovať objednávku</button>
-                <button class="btn btn--ghost btn--small" type="button" id="edit-order">Upraviť objednávku</button>
+                <button class="btn btn--ghost btn--small" type="button" id="copy-order">Kopírovať text</button>
+                <button class="btn btn--ghost btn--small" type="button" id="edit-order">Upraviť údaje</button>
               </div>
-              <p>Otázky k&nbsp;objednávke? Zavolajte na <a href="tel:+421900000000">+421 9xx xxx xxx</a>.</p>
+              <p>Ponáhľate sa? Zavolajte na <a href="tel:+421900000000">+421 9xx xxx xxx</a>.</p>
             </div>
           </div>
 
           <aside class="order-summary" aria-labelledby="summary-title">
-            <h3 id="summary-title">Súhrn objednávky</h3>
-            <dl class="sum-rows">
-              <div class="sum-row"><dt>Balík</dt><dd id="sum-pkg">3&nbsp;tabuľky</dd></div>
-              <div class="sum-row"><dt>Cena za kus</dt><dd id="sum-unit">23,00&nbsp;€</dd></div>
-              <div class="sum-row"><dt>Doprava</dt><dd>zadarmo</dd></div>
-              <div class="sum-row sum-row--total"><dt>Spolu</dt><dd id="sum-total">69&nbsp;€</dd></div>
-            </dl>
+            <h3 id="summary-title">Radšej hneď zavolajte</h3>
+            <a class="contact-phone" href="tel:+421900000000"><svg aria-hidden="true"><use href="#i-phone"/></svg>+421 9xx xxx xxx</a>
+            <p class="summary-contact">Po – Pi, 9:00 – 17:00<br><a href="mailto:ahoj@tukni.sk">ahoj@tukni.sk</a></p>
             <ol class="next-steps">
-              <li>Pošleme vám <span class="nowrap">e-mailom</span> potvrdenie, faktúru a&nbsp;odkaz na hodnotenie, ktorý zapíšeme do čipu.</li>
-              <li>Odkaz si otvorte v&nbsp;mobile. Ak nevedie na vašu prevádzku, napíšte nám pred úhradou.</li>
-              <li>Po úhrade tabuľky naprogramujeme, otestujeme a&nbsp;odošleme.</li>
+              <li>Zavoláme vám a&nbsp;dohodneme termín.</li>
+              <li>Prídeme, tabuľku nastavíme, nalepíme a&nbsp;vyskúšame.</li>
+              <li>Po montáži vám pošleme faktúru na 50&nbsp;€ za kus.</li>
             </ol>
-            <p class="summary-contact">Radšej telefonicky? Zavolajte na <a href="tel:+421900000000">+421 9xx xxx xxx</a>.</p>
           </aside>
         </div>
       </div>
@@ -638,43 +577,43 @@
             <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1d4fe0"/><path fill="#ffb300" d="M15.6 9.6l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8z" transform="translate(0 3)"/><path d="M27.2 14.2a8.4 8.4 0 0 1 0 11.6M31.3 10.6a13.6 13.6 0 0 1 0 18.8" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg>
             ťukni
           </a>
-          <p>NFC tabuľky na Google recenzie pre slovenské firmy. Robíme jednu vec a&nbsp;robíme ju poriadne.</p>
+          <p>NFC tabuľky na Google recenzie s&nbsp;osobnou montážou pre slovenské firmy. Robíme jednu vec a&nbsp;robíme ju poriadne.</p>
         </div>
         <div>
           <h2>Stránka</h2>
           <ul>
             <li><a href="#ako-to-funguje">Ako to funguje</a></li>
             <li><a href="#tabulka">Tabuľka</a></li>
-            <li><a href="#cennik">Cenník</a></li>
+            <li><a href="#cena">Cena</a></li>
             <li><a href="#otazky">Otázky</a></li>
           </ul>
         </div>
         <div>
           <h2>Kontakt</h2>
           <ul>
-            <li><a href="mailto:ahoj@tukni.sk">ahoj@tukni.sk</a></li>
             <li><a href="tel:+421900000000">+421 9xx xxx xxx</a></li>
+            <li><a href="mailto:ahoj@tukni.sk">ahoj@tukni.sk</a></li>
             <li>Po – Pi, 9:00 – 17:00</li>
           </ul>
         </div>
         <div>
           <h2>Dokumenty</h2>
           <ul>
-            <li><a href="obchodne-podmienky.html">Obchodné podmienky</a></li>
             <li><a href="ochrana-osobnych-udajov.html">Zásady ochrany osobných údajov</a></li>
+            <li><a href="en/" lang="en" hreflang="en">English version</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-legal">
-        <p>© <span data-year>2026</span> [Obchodné meno vrátane právnej formy], [sídlo / miesto podnikania – pri živnostníkovi aj adresa bydliska, ak je iná], IČO [doplniť][, IČ DPH SK… – len ak ste platiteľ DPH], zapísaný v&nbsp;[Obchodnom registri Okresného súdu …, oddiel …, vložka č.&nbsp;… / Živnostenskom registri Okresného úradu …, č.&nbsp;…]. Orgán dozoru: Slovenská obchodná inšpekcia, Inšpektorát SOI pre [kraj podľa sídla], [adresa inšpektorátu – overte na soi.sk]. Predaj výhradne podnikateľom.</p>
-        <p>Google je ochranná známka spoločnosti Google LLC. Služba ťukni.sk nie je so spoločnosťou Google prepojená ani ňou schválená.</p>
+        <p>© <span data-year>2026</span> [Obchodné meno vrátane právnej formy], [sídlo / miesto podnikania – pri živnostníkovi aj adresa bydliska, ak je iná], IČO [doplniť], zapísaný v&nbsp;[Obchodnom registri Okresného súdu …, oddiel …, vložka č.&nbsp;… / Živnostenskom registri Okresného úradu …, č.&nbsp;…]. Nie sme platiteľmi DPH. Orgán dozoru: Slovenská obchodná inšpekcia, Inšpektorát SOI pre [kraj podľa sídla], [adresa inšpektorátu – overte na soi.sk].</p>
+        <p>Google a&nbsp;logo Google sú ochranné známky spoločnosti Google LLC. Služba ťukni.sk nie je so spoločnosťou Google prepojená ani ňou schválená.</p>
       </div>
     </div>
   </footer>
 
   <div class="mobile-cta" id="mobile-cta" aria-hidden="true">
-    <div><strong>Tabuľka od 29&nbsp;€</strong><br><span>Doprava zadarmo</span></div>
-    <a class="btn btn--small" href="#objednavka" tabindex="-1">Objednať</a>
+    <div><strong>50&nbsp;€ aj s&nbsp;montážou</strong><br><span>Prídeme a&nbsp;nastavíme</span></div>
+    <a class="btn btn--small" href="#kontakt" tabindex="-1">Ozvite sa</a>
   </div>
 
   <script src="assets/js/main.js" defer></script>
