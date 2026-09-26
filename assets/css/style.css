@@ -323,6 +323,7 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 }
 .lang-switch a:hover { color: var(--blue); }
 .lang-switch a[aria-current="true"] { background: var(--ink); color: #fff; }
+.header-actions { display: flex; align-items: center; gap: 12px; }
 .nav-links {
   display: flex;
   gap: 26px;
@@ -1232,22 +1233,6 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
   border-radius: var(--radius-lg);
   background: var(--surface);
 }
-.fieldset {
-  display: grid;
-  gap: 16px;
-  margin: 0; padding: 0;
-  border: 0;
-  min-width: 0;
-}
-.fieldset legend {
-  padding: 0;
-  margin-bottom: 14px;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--blue);
-}
 .field-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1255,8 +1240,7 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 }
 .field { display: grid; gap: 7px; min-width: 0; }
 .field--full { grid-column: 1 / -1; }
-.field label,
-.field .label {
+.field label {
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--ink);
@@ -1293,29 +1277,6 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 .field.is-invalid input,
 .field.is-invalid textarea { border-color: var(--bad); }
 .field.is-invalid .error { display: block; }
-
-.consent {
-  display: grid;
-  grid-template-columns: 22px 1fr;
-  gap: 12px;
-  align-items: start;
-  font-size: 0.95rem;
-  color: var(--ink-2);
-  line-height: 1.5;
-}
-.consent input {
-  width: 20px; height: 20px;
-  min-height: 0;
-  margin: 2px 0 0;
-  padding: 0;
-  border: 0;
-  accent-color: var(--blue);
-}
-.consent input:focus { outline: none; }
-.consent.is-invalid input { outline: 2px solid var(--bad); outline-offset: 2px; }
-.consent input:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
-.consent .error { grid-column: 2; }
-.consent.is-invalid .error { display: block; }
 
 .honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
