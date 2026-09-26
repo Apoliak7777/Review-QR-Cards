@@ -2,11 +2,16 @@
 <html lang="sk">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Zásady ochrany osobných údajov | ťukni.sk</title>
-  <meta name="description" content="Ako ťukni.sk spracúva osobné údaje pri objednávkach NFC tabuliek.">
+  <meta name="description" content="Ako ťukni.sk spracúva osobné údaje pri dopytoch a montáži NFC tabuliek.">
   <meta name="color-scheme" content="light">
   <link rel="canonical" href="https://tukni.sk/ochrana-osobnych-udajov.html">
+  <link rel="alternate" hreflang="sk" href="https://tukni.sk/ochrana-osobnych-udajov.html">
+  <link rel="alternate" hreflang="en" href="https://tukni.sk/en/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://tukni.sk/ochrana-osobnych-udajov.html">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -19,6 +24,7 @@
     VZOR ZÁSAD OCHRANY OSOBNÝCH ÚDAJOV.
     Pred spustením doplňte polia označené [ ], overte zoznam príjemcov
     (formulárová služba, e-mail, hosting, účtovník) a nechajte text skontrolovať.
+    Pri zmene upravte aj anglickú verziu en/privacy.html.
   -->
   <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
   <header class="site-header">
@@ -27,7 +33,13 @@
         <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1d4fe0"/><path fill="#ffb300" d="M15.6 9.6l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8z" transform="translate(0 3)"/><path d="M27.2 14.2a8.4 8.4 0 0 1 0 11.6M31.3 10.6a13.6 13.6 0 0 1 0 18.8" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg>
         ťukni
       </a>
-      <a class="btn btn--small" href="./#objednavka">Objednať</a>
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Jazyk">
+          <a href="ochrana-osobnych-udajov.html" lang="sk" hreflang="sk" aria-current="true">SK</a>
+          <a href="en/privacy.html" lang="en" hreflang="en">EN</a>
+        </div>
+        <a class="btn btn--small" href="./#kontakt">Kontakt</a>
+      </div>
     </div>
   </header>
 
@@ -35,18 +47,17 @@
     <div class="wrap legal-inner">
       <p class="meta">Platné od <span class="fill">[dátum]</span></p>
       <h1>Zásady ochrany osobných údajov</h1>
-      <p>Pri objednávke NFC tabuliek od nás potrebujeme niekoľko údajov. Tu nájdete, ktoré to sú, prečo ich máme, ako dlho ich uchovávame a&nbsp;aké máte práva. Postupujeme podľa nariadenia (EÚ) 2016/679 (GDPR) a&nbsp;zákona č.&nbsp;18/2018 Z.&nbsp;z. o&nbsp;ochrane osobných údajov.</p>
+      <p>Keď sa nám ozvete kvôli NFC tabuľke, potrebujeme od vás niekoľko údajov. Tu nájdete, ktoré to sú, prečo ich máme, ako dlho ich uchovávame a&nbsp;aké máte práva. Postupujeme podľa nariadenia (EÚ) 2016/679 (GDPR) a&nbsp;zákona č.&nbsp;18/2018 Z.&nbsp;z. o&nbsp;ochrane osobných údajov.</p>
 
       <h2>1. Kto údaje spracúva</h2>
       <p>Prevádzkovateľom je <span class="fill">[obchodné meno]</span>, so sídlom <span class="fill">[adresa]</span>, IČO: <span class="fill">[IČO]</span>. Kontakt pre otázky o&nbsp;údajoch: <a href="mailto:ahoj@tukni.sk">ahoj@tukni.sk</a>.</p>
 
       <h2>2. Aké údaje spracúvame</h2>
       <ul>
-        <li>meno a&nbsp;priezvisko kontaktnej osoby, e-mail a&nbsp;telefón,</li>
-        <li>údaje o&nbsp;firme: obchodné meno, IČO, fakturačné údaje a&nbsp;údaje o&nbsp;Firemnom profile na Googli,</li>
-        <li>miesto doručenia (výdajné miesto Packeta alebo adresa),</li>
-        <li>obsah poznámky v&nbsp;objednávke a&nbsp;našej vzájomnej e-mailovej komunikácie,</li>
-        <li>informácia, odkiaľ ste na web prišli (označenie v&nbsp;odkaze, napríklad z&nbsp;letáku, alebo adresa webu, z&nbsp;ktorého ste klikli), ak odošlete objednávku.</li>
+        <li>z&nbsp;formulára, telefonátu alebo e-mailu: meno a&nbsp;priezvisko, telefón, e-mail (ak ho uvediete), názov a&nbsp;adresu prevádzky, počet tabuliek a&nbsp;obsah poznámky,</li>
+        <li>pri montáži: fakturačné údaje firmy (obchodné meno, sídlo, IČO, prípadne DIČ a&nbsp;IČ DPH) a&nbsp;odkaz na váš Firemný profil na Googli,</li>
+        <li>obsah našej vzájomnej komunikácie (e-maily, SMS správy, termíny),</li>
+        <li>informáciu, odkiaľ ste na web prišli (označenie v&nbsp;odkaze, napríklad z&nbsp;letáku, alebo adresa webu, z&nbsp;ktorého ste klikli), a&nbsp;jazyk webu, ak odošlete formulár.</li>
       </ul>
 
       <h2>3. Na čo údaje používame</h2>
@@ -56,28 +67,28 @@
             <tr><th>Účel</th><th>Právny základ</th><th>Doba uchovávania</th></tr>
           </thead>
           <tbody>
-            <tr><td data-label="Účel">Vybavenie objednávky, naprogramovanie tabuľky, doručenie a&nbsp;komunikácia</td><td data-label="Právny základ">plnenie zmluvy a&nbsp;oprávnený záujem na komunikácii s&nbsp;kontaktnou osobou zákazníka (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;b) a&nbsp;f) GDPR)</td><td data-label="Doba uchovávania">počas vybavovania objednávky a&nbsp;záručnej doby</td></tr>
+            <tr><td data-label="Účel">Odpoveď na váš dopyt a&nbsp;dohodnutie termínu montáže</td><td data-label="Právny základ">opatrenia pred uzavretím zmluvy na vašu žiadosť a&nbsp;oprávnený záujem na komunikácii s&nbsp;kontaktnou osobou firmy (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;b) a&nbsp;f) GDPR)</td><td data-label="Doba uchovávania">ak k&nbsp;montáži nedôjde, najviac 12&nbsp;mesiacov od poslednej komunikácie</td></tr>
+            <tr><td data-label="Účel">Montáž, nastavenie tabuľky, záruka a&nbsp;komunikácia so zákazníkom</td><td data-label="Právny základ">plnenie zmluvy a&nbsp;oprávnený záujem na komunikácii s&nbsp;kontaktnou osobou zákazníka (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;b) a&nbsp;f) GDPR)</td><td data-label="Doba uchovávania">počas plnenia zmluvy a&nbsp;záručnej doby</td></tr>
             <tr><td data-label="Účel">Fakturácia a&nbsp;účtovníctvo</td><td data-label="Právny základ">zákonná povinnosť (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;c) GDPR) podľa zákona o&nbsp;účtovníctve a&nbsp;daňových predpisov</td><td data-label="Doba uchovávania">10&nbsp;rokov</td></tr>
             <tr><td data-label="Účel">Vybavenie reklamácií a&nbsp;ochrana našich právnych nárokov</td><td data-label="Právny základ">oprávnený záujem (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;f) GDPR)</td><td data-label="Doba uchovávania">počas záručnej doby a&nbsp;premlčacej lehoty</td></tr>
-            <tr><td data-label="Účel">Odpovede na otázky zaslané e-mailom alebo položené telefonicky</td><td data-label="Právny základ">oprávnený záujem (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;f) GDPR)</td><td data-label="Doba uchovávania">najviac 2&nbsp;roky od poslednej komunikácie</td></tr>
-            <tr><td data-label="Účel">Vyhodnotenie, ktoré spôsoby propagácie fungujú (zdroj objednávky)</td><td data-label="Právny základ">oprávnený záujem (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;f) GDPR)</td><td data-label="Doba uchovávania">spolu s&nbsp;objednávkou</td></tr>
-            <tr><td data-label="Účel">Prevádzka a&nbsp;bezpečnosť webu (technické záznamy: IP adresa, čas prístupu, prehliadač)</td><td data-label="Právny základ">oprávnený záujem na bezpečnej prevádzke webu (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;f) GDPR)</td><td data-label="Doba uchovávania">podľa nastavení hostingu, <span class="fill">[napr. najviac 30&nbsp;dní]</span></td></tr>
+            <tr><td data-label="Účel">Vyhodnotenie, ktoré spôsoby propagácie fungujú (zdroj dopytu)</td><td data-label="Právny základ">oprávnený záujem (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;f) GDPR)</td><td data-label="Doba uchovávania">spolu s&nbsp;dopytom</td></tr>
+            <tr><td data-label="Účel">Prevádzka a&nbsp;bezpečnosť webu (technické záznamy: IP adresa, čas prístupu, prehliadač)</td><td data-label="Právny základ">oprávnený záujem na bezpečnej prevádzke webu (čl.&nbsp;6 ods.&nbsp;1 písm.&nbsp;f) GDPR)</td><td data-label="Doba uchovávania">podľa pravidiel poskytovateľa hostingu (GitHub)</td></tr>
           </tbody>
         </table>
       </div>
-      <p>Údaje vo formulári (okrem poznámky) potrebujeme na uzavretie a&nbsp;splnenie zmluvy. Bez nich objednávku nemôžeme prijať ani doručiť. Ich poskytnutie nie je zákonnou povinnosťou.</p>
+      <p>Meno, telefón, názov a&nbsp;adresu prevádzky potrebujeme, aby sme sa vám mohli ozvať a&nbsp;dohodnúť montáž. E-mail a&nbsp;poznámka sú nepovinné. Poskytnutie údajov nie je zákonnou povinnosťou.</p>
 
       <h2>4. Komu údaje odovzdávame</h2>
       <ul>
-        <li>poskytovateľovi služby na odosielanie formulárov <span class="fill">[Web3Forms / iný]</span>,</li>
-        <li>poskytovateľovi e-mailu a&nbsp;webhostingu <span class="fill">[názov]</span>,</li>
-        <li>spoločnosti Packeta Slovakia s.&nbsp;r.&nbsp;o. na doručenie zásielky (meno, telefón, e-mail, výdajné miesto),</li>
+        <li>službe Web3Forms, cez ktorú k&nbsp;nám putuje správa z&nbsp;formulára na webe,</li>
+        <li>poskytovateľovi nášho e-mailu <span class="fill">[názov]</span>,</li>
+        <li>spoločnosti GitHub, Inc. (USA), ktorá prevádzkuje hosting webu (GitHub Pages) a&nbsp;pri každej návšteve zaznamenáva IP adresu na bezpečnostné účely,</li>
         <li>externému účtovníkovi <span class="fill">[ak ho máte]</span>.</li>
       </ul>
       <p>Ak niektorý z&nbsp;poskytovateľov spracúva údaje mimo Európskej únie, deje sa tak iba na základe rozhodnutia Európskej komisie o&nbsp;primeranosti alebo štandardných zmluvných doložiek.</p>
 
       <h2>5. Cookies a&nbsp;meranie návštevnosti</h2>
-      <p>Tento web nepoužíva cookies ani analytické či reklamné nástroje. Písma sú uložené priamo na našom serveri, takže pri návšteve sa vaše údaje neposielajú tretím stranám. Poskytovateľ hostingu môže krátkodobo uchovávať technické záznamy (napríklad IP adresu a&nbsp;čas prístupu) na zabezpečenie prevádzky webu.</p>
+      <p>Tento web nepoužíva cookies ani analytické či reklamné nástroje a&nbsp;nič neukladá do vášho prehliadača. Písma sú uložené priamo na našom webe, nenačítavajú sa od tretích strán. Poskytovateľ hostingu (GitHub) zaznamenáva pri návšteve technické údaje, napríklad IP adresu a&nbsp;čas prístupu, na zabezpečenie prevádzky webu.</p>
 
       <h2>6. Vaše práva</h2>
       <p>Máte právo na prístup k&nbsp;údajom, ich opravu, vymazanie, obmedzenie spracúvania, prenosnosť a&nbsp;právo namietať proti spracúvaniu na základe oprávneného záujmu. Stačí napísať na <a href="mailto:ahoj@tukni.sk">ahoj@tukni.sk</a>, odpovieme najneskôr do jedného mesiaca.</p>
@@ -91,7 +102,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-legal">
-        <p>© <span data-year>2026</span> [Obchodné meno vrátane právnej formy], [sídlo / miesto podnikania – pri živnostníkovi aj adresa bydliska, ak je iná], IČO [doplniť][, IČ DPH SK… – len ak ste platiteľ DPH], zapísaný v&nbsp;[Obchodnom registri Okresného súdu …, oddiel …, vložka č.&nbsp;… / Živnostenskom registri Okresného úradu …, č.&nbsp;…]. Orgán dozoru: Slovenská obchodná inšpekcia, Inšpektorát SOI pre [kraj podľa sídla], [adresa inšpektorátu – overte na soi.sk]. <a href="./" style="color:inherit">Späť na úvod</a> · <a href="obchodne-podmienky.html" style="color:inherit">Obchodné podmienky</a></p>
+        <p>© <span data-year>2026</span> [Obchodné meno vrátane právnej formy], [sídlo / miesto podnikania – pri živnostníkovi aj adresa bydliska, ak je iná], IČO [doplniť], zapísaný v&nbsp;[Obchodnom registri Okresného súdu …, oddiel …, vložka č.&nbsp;… / Živnostenskom registri Okresného úradu …, č.&nbsp;…]. Nie sme platiteľmi DPH. Orgán dozoru: Slovenská obchodná inšpekcia, Inšpektorát SOI pre [kraj podľa sídla], [adresa inšpektorátu – overte na soi.sk]. <a href="./" style="color:inherit">Späť na úvod</a> · <a href="obchodne-podmienky.html" style="color:inherit">Obchodné podmienky</a></p>
         <p>Google je ochranná známka spoločnosti Google LLC. Služba ťukni.sk nie je so spoločnosťou Google prepojená ani ňou schválená.</p>
       </div>
     </div>

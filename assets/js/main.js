@@ -331,7 +331,8 @@
   /* ---------- Plávajúca výzva na mobile ---------- */
   var cta = $("#mobile-cta");
   var hero = $(".hero");
-  var contactSection = $("#kontakt");
+  var ctaLink = cta ? cta.querySelector("a[href^='#']") : null;
+  var contactSection = ctaLink ? $(ctaLink.getAttribute("href")) : null; // #kontakt v SK, #contact v EN
   if (cta && hero && contactSection && "IntersectionObserver" in window) {
     var heroVisible = true;
     var contactVisible = false;
