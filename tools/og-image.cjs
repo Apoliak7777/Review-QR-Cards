@@ -24,7 +24,7 @@ const TEXTS = {
     page: "index.html",
     out: "assets/img/og-image.png",
     size: 86,
-    title: 'Priloží mobil.<br><span class="mark">Ohodnotí vás</span><br><span class="mark">na Google.</span>',
+    title: 'Priložia mobil<br><span class="mark">a ohodnotia</span><br><span class="mark">vás na Googli.</span>',
     lead: "NFC tabuľky na Google recenzie pre slovenské firmy. <strong>50&nbsp;€ aj s&nbsp;montážou.</strong>"
   },
   en: {

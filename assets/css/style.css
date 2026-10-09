@@ -1111,6 +1111,7 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
   font-variant-numeric: tabular-nums;
 }
 .plan-amount span { font-size: 0.5em; margin-left: 6px; letter-spacing: 0; }
+.plan-amount--pre span { margin: 0 4px 0 0; } /* EN: €50, mena pred sumou */
 .plan-unit {
   font-family: var(--font-mono);
   font-size: 0.84rem;
