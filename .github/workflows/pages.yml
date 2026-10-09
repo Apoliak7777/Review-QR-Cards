@@ -34,13 +34,30 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/configure-pages@v6
+      - id: pages
+        uses: actions/configure-pages@v6
       # Publikujú sa iba súbory webu, nie README, nástroje ani nastavenia repozitára.
       - name: Pripraviť súbory webu
+        env:
+          ZDROJ_URL: https://apoliak7777.github.io/Review-QR-Cards
+          WEB_URL: ${{ steps.pages.outputs.base_url }}
+          WEB_CESTA: ${{ steps.pages.outputs.base_path }}
         run: |
           mkdir _site
-          git ls-files -z -- . ':(exclude)README.md' ':(exclude).github' ':(exclude)tools' ':(exclude)_headers' \
+          git ls-files -z -- . ':(exclude)README.md' ':(exclude).github' ':(exclude)tools' ':(exclude)_headers' ':(exclude).gitignore' \
             | xargs -0 cp --parents -t _site
+          WEB_URL="${WEB_URL%/}"
+          WEB_CESTA="${WEB_CESTA%/}"
+          # Absolútne adresy (canonical, hreflang, og:, JSON-LD, sitemap, robots) vždy ukazujú na skutočnú
+          # adresu webu. Po pripojení vlastnej domény v Settings → Pages sa prepnú samy, v kóde netreba nič meniť.
+          if [ -n "$WEB_URL" ] && [ "$WEB_URL" != "$ZDROJ_URL" ]; then
+            grep -rlF "$ZDROJ_URL" _site | xargs -r sed -i "s#${ZDROJ_URL}#${WEB_URL}#g"
+          fi
+          # 404.html používa cesty od koreňa (/assets/…). Bez vlastnej domény beží web v podpriečinku, tak ho doplníme.
+          if [ -n "$WEB_CESTA" ]; then
+            sed -i -E "s#(href|src)=\"/#\1=\"${WEB_CESTA}/#g" _site/404.html
+          fi
+          echo "Adresa webu: ${WEB_URL}/" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-pages-artifact@v5
       - id: deployment
         uses: actions/deploy-pages@v5

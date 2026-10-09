@@ -1,4 +1,4 @@
-/* ťukni.sk – interakcie stránky (bez knižníc), slovenská aj anglická verzia */
+/* ťukni – interakcie stránky (bez knižníc), slovenská aj anglická verzia */
 (function () {
   "use strict";
 
@@ -23,7 +23,7 @@
       },
       langName: "slovenčina",
       subject: "Záujem o NFC tabuľku – ",
-      fromName: "ťukni.sk – nový záujemca",
+      fromName: "ťukni – nový záujemca",
       sending: "Odosiela sa…",
       sentText: function (tel) { return "Zavoláme vám na " + tel + " do jedného pracovného dňa a dohodneme termín montáže."; },
       mailTitle: "Posledný krok: odošlite e-mail",
@@ -51,7 +51,7 @@
       },
       langName: "English",
       subject: "NFC plate enquiry – ",
-      fromName: "ťukni.sk – new enquiry (EN)",
+      fromName: "ťukni – new enquiry (EN)",
       sending: "Sending…",
       sentText: function (tel) { return "We will call you on " + tel + " within one working day to arrange the installation."; },
       mailTitle: "Last step: send the e-mail",

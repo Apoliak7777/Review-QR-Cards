@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tukni.sk/sitemap.xml
+Sitemap: https://apoliak7777.github.io/Review-QR-Cards/sitemap.xml

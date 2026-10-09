@@ -25,14 +25,14 @@ const TEXTS = {
     out: "assets/img/og-image.png",
     size: 86,
     title: 'Priložia mobil<br><span class="mark">a ohodnotia</span><br><span class="mark">vás na Googli.</span>',
-    lead: "NFC tabuľky na Google recenzie pre slovenské firmy. <strong>50&nbsp;€ aj s&nbsp;montážou.</strong>"
+    lead: "NFC tabuľky na Google recenzie pre slovenské firmy. <strong>59&nbsp;€ aj s&nbsp;montážou.</strong>"
   },
   en: {
     page: "en/index.html",
     out: "assets/img/og-image-en.png",
     size: 80,
     title: 'They tap.<br><span class="mark">They review</span><br><span class="mark">you on Google.</span>',
-    lead: "NFC plates for Google reviews in Slovakia. <strong>€50&nbsp;including installation.</strong>"
+    lead: "NFC plates for Google reviews in Slovakia. <strong>€59&nbsp;including installation.</strong>"
   }
 };
 
@@ -64,7 +64,7 @@ function build(lang, t) {
 ${sprite}
 <div class="og">
   <div class="og-copy">
-    <span class="logo">${logo}ťukni.sk</span>
+    <span class="logo">${logo}ťukni</span>
     <h1>${t.title}</h1>
     <p>${t.lead}</p>
   </div>
