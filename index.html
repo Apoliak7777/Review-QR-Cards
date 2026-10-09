@@ -2,7 +2,7 @@
 <html lang="sk">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com mailto:; base-uri 'self'; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>NFC tabuľky na Google recenzie s montážou | ťukni</title>
@@ -34,6 +34,7 @@
   <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/figtree-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
+  <noscript><style>.order-form { display: none; }</style></noscript>
 
   <script type="application/ld+json">
   {
@@ -481,9 +482,10 @@
               NASTAVENIE ODOSIELANIA:
               data-web3forms-key  = prístupový kľúč z web3forms.com (správy prídu e-mailom)
               data-email          = adresa, na ktorú sa otvorí e-mail, ak kľúč nie je vyplnený
-              action="mailto:…"   = tá istá adresa; použije sa iba v prehliadači bez JavaScriptu
+              Bez JavaScriptu sa formulár skryje a namiesto neho sa zobrazí e-mail a telefón (noscript).
             -->
-            <form class="order-form" id="order-form" method="post" action="mailto:apoliak@apoliak.online" enctype="text/plain"
+            <noscript><p class="form-note">Formulár potrebuje zapnutý JavaScript. Napíšte nám na <a href="mailto:apoliak@apoliak.online">apoliak@apoliak.online</a> alebo zavolajte na <a href="tel:+421902464022">0902 464 022</a>.</p></noscript>
+            <form class="order-form" id="order-form" method="post"
                   data-web3forms-key=""
                   data-email="apoliak@apoliak.online">
 
@@ -528,8 +530,6 @@
                 <label for="botcheck">Nevypĺňajte</label>
                 <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
               </div>
-
-              <noscript><p class="form-note">Bez JavaScriptu sa správa odošle cez váš e-mailový program. Ak sa neotvorí, napíšte nám na apoliak@apoliak.online.</p></noscript>
 
               <div class="form-actions">
                 <button class="btn btn--block" type="submit" id="submit-btn">Chcem, aby ste sa mi ozvali <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>

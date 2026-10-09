@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com mailto:; base-uri 'self'; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>NFC Google review plates with installation | ťukni</title>
@@ -34,6 +34,7 @@
   <link rel="preload" href="../assets/fonts/bricolage-grotesque-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/figtree-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/css/style.css">
+  <noscript><style>.order-form { display: none; }</style></noscript>
 
   <script type="application/ld+json">
   {
@@ -457,9 +458,10 @@
               SENDING SETUP (same values as in the Slovak index.html):
               data-web3forms-key  = access key from web3forms.com (messages arrive by e-mail)
               data-email          = address used for the e-mail fallback when the key is empty
-              action="mailto:…"   = the same address; used only in browsers without JavaScript
+              Without JavaScript the form is hidden and the e-mail and phone are shown instead (noscript).
             -->
-            <form class="order-form" id="order-form" method="post" action="mailto:apoliak@apoliak.online" enctype="text/plain"
+            <noscript><p class="form-note">The form needs JavaScript. Write to us at <a href="mailto:apoliak@apoliak.online">apoliak@apoliak.online</a> or call <a href="tel:+421902464022">+421 902 464 022</a>.</p></noscript>
+            <form class="order-form" id="order-form" method="post"
                   data-web3forms-key=""
                   data-email="apoliak@apoliak.online">
 
@@ -504,8 +506,6 @@
                 <label for="botcheck">Do not fill in</label>
                 <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
               </div>
-
-              <noscript><p class="form-note">Without JavaScript the message is sent through your e-mail program. If it doesn't open, write to us at apoliak@apoliak.online.</p></noscript>
 
               <div class="form-actions">
                 <button class="btn btn--block" type="submit" id="submit-btn">Request a call back <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>

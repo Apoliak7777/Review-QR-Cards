@@ -49,7 +49,7 @@ Lokálny náhľad: `python3 -m http.server 8000` a otvorte `http://localhost:800
 
 ## Kontakt a prevádzkovateľ
 
-Prevádzkovateľ: Alex Poliak, Bratislava. Telefón 0902 464 022 (v EN `+421 902 464 022`), e-mail `apoliak@apoliak.online`. Sú v hlavných stránkach (otázky, kontakt, pätička, formulár `action` a `data-email`), v obchodných podmienkach (bod 1.1 a 5.4) a v zásadách (bod 1, SK aj EN). Všetky výskyty:
+Prevádzkovateľ: Alex Poliak, Bratislava. Telefón 0902 464 022 (v EN `+421 902 464 022`), e-mail `apoliak@apoliak.online`. Sú v hlavných stránkach (otázky, kontakt, pätička, formulár `data-email`), v obchodných podmienkach (bod 1.1 a 5.4) a v zásadách (bod 1, SK aj EN). Všetky výskyty:
 
 ```
 grep -rnE 'apoliak@apoliak\.online|902 ?464 ?022|421902464022' --include='*.html' .
